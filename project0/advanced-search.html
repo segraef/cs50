@@ -20,36 +20,83 @@
         </div>
     </header>
 
-    <main>
-        <center>
-            <br>
-            <img src="google.png" width="20%" height="5%" id="googleimg">
-            <!-- Search bar -->
-            <form id="form1">
-                <div>
-                    <div id="maindiv">
-                        <span id="searchsymbol"><svg focusable="false" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-                                </path>
-                            </svg></span>
-                        <span id="searchbarspan">
-
-                            <input type="text" name="q">
-                        </span>
-                    </div>
+    <img src="google.png" width="20%" height="5%" id="googleimgadv">
+    <h3>Advanced Search</h3>
+    <div class="divider"></div>
+    <div class="container">
+        <form id="form1">
+            <div class="row">
+                <div class="col-20">
+                    <h4>Find pages with...</h4>
                 </div>
-            </form>
-            <!-- Buttons -->
-            <section>
-                <div><button type="submit" formaction="https://google.com/search" form="form1">Google Search</button>
+                <div class="col-50">
+                    <p></p>
                 </div>
-                <div><button type="submit" formaction="https://google.com/search" form="form1" name="btnI">I'm Feeling
-                        Lucky</button></div>
-            </section>
-        </center>
-    </main>
+                <div class="col-30">
+                    <h5>To do this in the search box.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-20">
+                    <label for="words">all these words:</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="as_q">
+                </div>
+                <div class="col-30">
+                    <p>Type the important words: <b>tri-colour rat terrier</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-20">
+                    <label for="word">this exact word or phrase:</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="as_epq">
+                </div>
+                <div class="col-30">
+                    <p>Put exact words in quotes: <b>"rat terrier"</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-20">
+                    <label for="any">any of these words:</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="as_oq">
+                </div>
+                <div class="col-30">
+                    <p>Type <b>OR</b> between all the words you want: <b>miniature OR standard</b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-20">
+                    <label for="none">none of these words:</label>
+                </div>
+                <div class="col-50">
+                    <input type="text" name="as_eq">
+                </div>
+                <div class="col-30">
+                    <p>Put a minus sign just before words that you don't want: <b>-rodent, -"Jack Russell"</b></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="divider"></div>
+    <div class="row">
+        <div class="col-20">
+        </div>
+        <div class="col-50">
+            <input type="hidden" name="as_qdr" value="all">
+            <input type="hidden" name="as_occt" value="all">
+            <button type="submit" formaction="https://google.com/search" form="form1">Advanced
+                Search</button>
+        </div>
+        <div class="col-30">
+        </div>
+    </div>
+    <br>
+    <div class="divider"></div>
 </body>
 
 </html>
